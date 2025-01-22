@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar";
 import { usePathname } from "next/navigation";
 import RouteHandler from "./RouteHandle";
 import WhatsAppButton from "./Whatsapp";
+import DashboardNavbar from "./DashboardNavbar";
 
 const Layout = ({ children }) => {
   const pathname = usePathname(); // Using usePathname to determine the current route
@@ -13,12 +14,16 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen "> {/* Set a minimum height and background color */}
       {pathname.startsWith("/web-hub") ? (
+        <>
+        <DashboardNavbar/>
         <div className="flex h-screen">
+
           <Sidebar /> {/* Sidebar for admin routes */}
           <div className="border flex-1 overflow-auto"> {/* Main content area */}
             {children} 
           </div>
         </div>
+        </>
       ) : (
         <>
         <RouteHandler>
@@ -37,6 +42,7 @@ const Layout = ({ children }) => {
         </RouteHandler>
         </>
       )}
+      
     </div>
   );
 };
