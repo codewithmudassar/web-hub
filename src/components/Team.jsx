@@ -1,34 +1,4 @@
-// "use client";
-// import React from "react";
-// import { motion } from "framer-motion";
-
-// const Team = () => {
-//   return (
-//     <div>
-//       <motion.h1
-//         initial={{ opacity: 0, y: 40 }}
-//         whileInView={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 0.9 }}
-//         viewport={{ once: true }}
-//         className="text-4xl md:text-5xl font-bold text-dark dark:text-light mb-12 text-center"
-//       >
-//         <span className="text-bllue">M</span>eet Our Team
-//       </motion.h1>
-
-
-
-//     </div>
-//   );
-// };
- 
-// export default Team;   
-
-
-
-
-
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -50,7 +20,6 @@ const Team = () => {
       employe: "Azeem Qasim",
       image: "/images/team/azeem.webp",
       category: "DT",
-      className: "edify-team-head-background",
     },
     {
       id: "3",
@@ -86,28 +55,28 @@ const Team = () => {
       designation: "Sr. Data Scientist",
       employe: "Sohail Tariq",
       image: "/images/team/sohail.jpg",
-      category: "PD",
+      category: "WP",
     },
     {
       id: "19",
       designation: "Head Of Department",
       employe: "Aleena Safdar",
       image: "/images/team/aleena.webp",
-      category: "BDO",
+      category: "SE",
     },
     {
       id: "11",
       designation: "Android App Developer",
       employe: "Mr. Shehroz",
       image: "/images/team/shehroz.webp",
-      category: "PD",
+      category: "WP",
     },
     {
       id: "9",
       designation: "Sr. Web Developer",
       employe: "Hamza Aamir",
       image: "/images/team/hamza.jpg",
-      category: "PD",
+      category: "WP",
     },
     {
       id: "7",
@@ -121,38 +90,14 @@ const Team = () => {
       designation: "Business Development Officer",
       employe: "Bushra Ayub",
       image: "/images/team/bushra.webp",
-      category: "BDO",
-    },
-
-    {
-      id: "12",
-      designation: "Sr. Graphic Designer",
-      employe: "Syed Ahmad Hasnain",
-      image: "/images/team/ahmad.jpg",
-      className: "edify-team-head-background",
-      category: "GP",
-    },
-
-    {
-      id: "13",
-      designation: "Graphic Designer | Video Editor",
-      employe: "Armaz Ali",
-      image: "/images/team/armaz.jpg",
-      category: "GP",
+      category: "SE",
     },
     {
       id: "16",
       designation: "Sr. Web Developer",
       employe: "Muhammad Ahmad",
       image: "/images/team/ahmad.webp",
-      category: "PD",
-    },
-    {
-      id: "21",
-      designation: "Graphic Designer",
-      employe: "Iqra Safdar",
-      image: "/images/team/iqra.jpg",
-      category: "GP",
+      category: "WP",
     },
     {
       id: "28",
@@ -166,7 +111,7 @@ const Team = () => {
       designation: "Front Desk Officer",
       employe: "Tabish Muhammad Din",
       image: "/images/team/tabish.jpg",
-      category: "BDO",
+      category: "SE",
     },
 
   ];
@@ -184,18 +129,28 @@ const Team = () => {
     },
     {
       id: "3",
-      buttonText: "Developers",
-      value: "PD",
+      buttonText: "Web Developers",
+      value: "WD",
     },
     {
       id: "4",
-      buttonText: "Digital Marketer",
+      buttonText: "App Developers",
       value: "MK",
     },
     {
       id: "5",
       buttonText: "Seo Experts",
-      value: "BDO",
+      value: "SE",
+    },
+    {
+      id: "5",
+      buttonText: "Wordpress Experts",
+      value: "WP",
+    },
+    {
+      id: "5",
+      buttonText: "Digital Marketers",
+      value: "MK",
     },
   ];
 

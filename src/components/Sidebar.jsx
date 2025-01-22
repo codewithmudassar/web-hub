@@ -112,7 +112,7 @@ const Sidebar = () => {
             <Link
               key={i}
               className={`flex p-2 gap-2 border rounded-md items-center ${
-                pathname === v.href ? "bg-blue-500 text-white" : ""
+                pathname === v.href ? "bg-blue-500 text-light dark:text-dark" : "text-dark dark:text-light"
               }`}
               href={v.href}
             >
